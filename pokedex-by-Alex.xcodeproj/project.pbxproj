@@ -15,12 +15,15 @@
 		468EC2711C518FE90027C0FB /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 468EC2701C518FE90027C0FB /* pokemon.csv */; };
 		468EC2741C51B31F0027C0FB /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468EC2731C51B31F0027C0FB /* Pokemon.swift */; };
 		468EC2771C51BA050027C0FB /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468EC2761C51BA050027C0FB /* PokeCell.swift */; };
+		468EC2791C51C5080027C0FB /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468EC2781C51C5080027C0FB /* csv.swift */; };
+		468EC27E1C51CE2E0027C0FB /* Pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 468EC27D1C51CE2E0027C0FB /* Pokemon.ttf */; };
+		468EC2801C51D3FF0027C0FB /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 468EC27F1C51D3FF0027C0FB /* music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		468EC25B1C518CF70027C0FB /* pokedex-by-Alex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pokedex-by-Alex.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		468EC25E1C518CF70027C0FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		468EC2601C518CF70027C0FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		468EC2601C518CF70027C0FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "pokedex-by-Alex/ViewController.swift"; sourceTree = "<group>"; };
 		468EC2631C518CF70027C0FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		468EC2651C518CF70027C0FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		468EC2681C518CF70027C0FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +31,9 @@
 		468EC2701C518FE90027C0FB /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		468EC2731C51B31F0027C0FB /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		468EC2761C51BA050027C0FB /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
+		468EC2781C51C5080027C0FB /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = csv.swift; path = "pokedex-by-Alex/csv.swift"; sourceTree = "<group>"; };
+		468EC27D1C51CE2E0027C0FB /* Pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pokemon.ttf; sourceTree = "<group>"; };
+		468EC27F1C51D3FF0027C0FB /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +68,11 @@
 			children = (
 				468EC2721C51B30D0027C0FB /* Model */,
 				468EC2751C51B9C40027C0FB /* View */,
+				468EC27B1C51C5370027C0FB /* Controller */,
+				468EC27A1C51C5220027C0FB /* Utilities */,
+				468EC27C1C51C5590027C0FB /* Resources */,
 				468EC25E1C518CF70027C0FB /* AppDelegate.swift */,
-				468EC2601C518CF70027C0FB /* ViewController.swift */,
 				468EC2621C518CF70027C0FB /* Main.storyboard */,
-				468EC2701C518FE90027C0FB /* pokemon.csv */,
 				468EC2651C518CF70027C0FB /* Assets.xcassets */,
 				468EC2671C518CF70027C0FB /* LaunchScreen.storyboard */,
 				468EC26A1C518CF70027C0FB /* Info.plist */,
@@ -87,6 +94,34 @@
 				468EC2761C51BA050027C0FB /* PokeCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		468EC27A1C51C5220027C0FB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				468EC2781C51C5080027C0FB /* csv.swift */,
+			);
+			name = Utilities;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		468EC27B1C51C5370027C0FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				468EC2601C518CF70027C0FB /* ViewController.swift */,
+			);
+			name = Controller;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		468EC27C1C51C5590027C0FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				468EC27F1C51D3FF0027C0FB /* music.mp3 */,
+				468EC27D1C51CE2E0027C0FB /* Pokemon.ttf */,
+				468EC2701C518FE90027C0FB /* pokemon.csv */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +182,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468EC27E1C51CE2E0027C0FB /* Pokemon.ttf in Resources */,
 				468EC2691C518CF70027C0FB /* LaunchScreen.storyboard in Resources */,
+				468EC2801C51D3FF0027C0FB /* music.mp3 in Resources */,
 				468EC2661C518CF70027C0FB /* Assets.xcassets in Resources */,
 				468EC2711C518FE90027C0FB /* pokemon.csv in Resources */,
 				468EC2641C518CF70027C0FB /* Main.storyboard in Resources */,
@@ -165,6 +202,7 @@
 				468EC2611C518CF70027C0FB /* ViewController.swift in Sources */,
 				468EC25F1C518CF70027C0FB /* AppDelegate.swift in Sources */,
 				468EC2741C51B31F0027C0FB /* Pokemon.swift in Sources */,
+				468EC2791C51C5080027C0FB /* csv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +317,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AlexNguyen.pokedex-by-Alex";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -290,6 +329,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AlexNguyen.pokedex-by-Alex";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

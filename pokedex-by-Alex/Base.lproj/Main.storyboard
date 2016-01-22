@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Pokemon.ttf">
+            <string>PokemonSolidNormal</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -23,10 +28,43 @@
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="elu-XF-rhX">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlC-4O-WRf">
+                                        <rect key="frame" x="173" y="8" width="254" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="s87-6j-Iyc"/>
+                                            <constraint firstAttribute="width" constant="254" id="y80-mY-Bs4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAU-iQ-k8w">
+                                        <rect key="frame" x="557" y="21" width="35" height="32.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="64Z-jq-XXq"/>
+                                            <constraint firstAttribute="width" constant="25" id="kQC-VB-iaH"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="music"/>
+                                        <connections>
+                                            <action selector="musicButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VSD-s5-98e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tAU-iQ-k8w" secondAttribute="trailing" constant="8" id="2D2-OW-lgc"/>
+                                    <constraint firstItem="RlC-4O-WRf" firstAttribute="top" secondItem="elu-XF-rhX" secondAttribute="top" constant="8" id="Y7r-25-Zhi"/>
+                                    <constraint firstItem="tAU-iQ-k8w" firstAttribute="top" secondItem="elu-XF-rhX" secondAttribute="top" constant="21" id="Zca-cz-cDs"/>
+                                    <constraint firstItem="RlC-4O-WRf" firstAttribute="centerX" secondItem="elu-XF-rhX" secondAttribute="centerX" id="dnO-E0-JUb"/>
                                     <constraint firstAttribute="height" constant="55" id="k3a-mn-Jxq"/>
+                                    <constraint firstAttribute="bottom" secondItem="tAU-iQ-k8w" secondAttribute="bottom" constant="8.5" id="qOF-Me-gpf"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Zca-cz-cDs"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <searchBar contentMode="redraw" ambiguous="YES" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="hBd-Jw-ojK">
                                 <rect key="frame" x="0.0" y="60" width="600" height="44"/>
@@ -42,7 +80,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9h6-l3-QBo" customClass="PokeCell" customModule="pokedex_by_Alex" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="9h6-l3-QBo" customClass="PokeCell" customModule="pokedex_by_Alex" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="108" height="91"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -107,6 +145,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="collection" destination="0Wm-82-Tp8" id="EiS-DS-vrL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -116,5 +157,6 @@
     <resources>
         <image name="297" width="120" height="120"/>
         <image name="bg" width="1920" height="1200"/>
+        <image name="music" width="304" height="304"/>
     </resources>
 </document>
