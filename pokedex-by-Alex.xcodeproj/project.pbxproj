@@ -18,6 +18,7 @@
 		468EC2791C51C5080027C0FB /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468EC2781C51C5080027C0FB /* csv.swift */; };
 		468EC27E1C51CE2E0027C0FB /* Pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 468EC27D1C51CE2E0027C0FB /* Pokemon.ttf */; };
 		468EC2801C51D3FF0027C0FB /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 468EC27F1C51D3FF0027C0FB /* music.mp3 */; };
+		468EC2821C528DE90027C0FB /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468EC2811C528DE90027C0FB /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		468EC2781C51C5080027C0FB /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = csv.swift; path = "pokedex-by-Alex/csv.swift"; sourceTree = "<group>"; };
 		468EC27D1C51CE2E0027C0FB /* Pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pokemon.ttf; sourceTree = "<group>"; };
 		468EC27F1C51D3FF0027C0FB /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		468EC2811C528DE90027C0FB /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				468EC2601C518CF70027C0FB /* ViewController.swift */,
+				468EC2811C528DE90027C0FB /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			path = ..;
@@ -201,6 +204,7 @@
 				468EC2771C51BA050027C0FB /* PokeCell.swift in Sources */,
 				468EC2611C518CF70027C0FB /* ViewController.swift in Sources */,
 				468EC25F1C518CF70027C0FB /* AppDelegate.swift in Sources */,
+				468EC2821C528DE90027C0FB /* PokemonDetailVC.swift in Sources */,
 				468EC2741C51B31F0027C0FB /* Pokemon.swift in Sources */,
 				468EC2791C51C5080027C0FB /* csv.swift in Sources */,
 			);
