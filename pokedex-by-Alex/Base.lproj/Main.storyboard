@@ -413,7 +413,7 @@
                         <outlet property="nextEvoImg" destination="tNC-hx-leq" id="DhH-NX-1AB"/>
                         <outlet property="pokedexLbl" destination="gia-ZV-IOp" id="4iG-UI-yGK"/>
                         <outlet property="typeLbl" destination="AJO-RS-6qV" id="rbm-R9-Mzv"/>
-                        <outlet property="weightLbl" destination="CF2-KK-kZq" id="cLu-fI-DdH"/>
+                        <outlet property="weightLbl" destination="1rP-4b-BZF" id="n0F-ld-sHK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8UL-TY-iaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
